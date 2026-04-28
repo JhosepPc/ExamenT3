@@ -25,9 +25,9 @@ def AgregaPuesto():
     sueldo = float(input("Sueldo: "))
  
     if len(descripcion) < 3 or len(areaSolicitante) < 3:
-        print("Error: strings deben tener al menos 3 letras."); return
+        print("Error,debe tener al menos 3 letras."); return
     if codigo <= 0 or plazasRequeridas <= 0 or sueldo <= 0:
-        print("Error: numericos deben ser mayor a cero."); return
+        print("Error, debe ser mayor a cero."); return
  
     nuevo = PuestoDeTrabajo(codigo, descripcion, areaSolicitante, plazasRequeridas, sueldo)
     if buscaPuesto(lista, nuevo):
